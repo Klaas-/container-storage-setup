@@ -10,3 +10,4 @@ EnvironmentFile=-/etc/sysconfig/docker-storage-setup
 
 [Install]
 WantedBy=multi-user.target
+RequiredBy=docker.service

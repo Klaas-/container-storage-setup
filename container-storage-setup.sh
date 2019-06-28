@@ -1327,7 +1327,7 @@ Type=xfs
 Options=pquota
 
 [Install]
-WantedBy=docker-storage-setup.service
+RequiredBy=docker-storage-setup.service
 EOF
   mv "${unit_file_path}.tmp" "$unit_file_path"
   systemctl daemon-reload
